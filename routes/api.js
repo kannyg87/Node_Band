@@ -8,9 +8,11 @@ router.use(express.urlencoded({extended: false}));
 
 
 router.get("/api", (req, res) => {
-  res.json(feedbackData)
+    //getting json data from the user localhost:3000/api 
+    res.json(feedbackData)
 });
 
+//we are not doing api calls we are doing api post
 router.post('/api', (req, res) => {
   
     //grab data form request - body-parser 

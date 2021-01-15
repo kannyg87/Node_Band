@@ -21,13 +21,13 @@ router.get('/albums' , (req,res)=>{
 
 router.get('/albums/:albumsSummary', (req, res) => {
     let alldata = dataFile.kanny
+    let Sumtest=[];
+    let pageSummary = "";
     
-    let pageSummary = [];
-    let TylerAlbumName = [];
     alldata.forEach(SumObj =>{
-        if (SumObj.albumname ===req.params.albumsSummary){
+        if (SumObj.shortname ===req.params.albumsSummary){
             pageSummary= SumObj.summary;
-            TylerAlbumName.push(SumObj)
+            Sumtest.push(SumObj)
 
         }
         
@@ -35,7 +35,7 @@ router.get('/albums/:albumsSummary', (req, res) => {
     
 
     res.render('albums', {
-        data : alldata,
+        data : Sumtest,
         Summary: pageSummary,
         pageTitle: "Generic Page - Industrious by TEMPLATED"
     })

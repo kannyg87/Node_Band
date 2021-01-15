@@ -1,56 +1,39 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-
-    <title>Roux Meetups</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    <head>
+		<title>Generic Page - Industrious by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
         integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-  
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab' rel='stylesheet' type='text/css'>
-</head>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab' rel='stylesheet' type='text/css'>
+	</head>
 
-<body>
+<body class="is-preload">
+    <!-- Header -->
+			<header id="header">
+				<a class="logo" href="/index">Industrious</a>
+				
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
 
-    <header>
-        <div class="jumbotron hidden-xs">
-        </div><!-- jumbotron -->
-
-        <nav class="navbar navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
-
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#navbar-collapse" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                    <a href="/" class="navbar-brand"></a>
-                </div>
-                <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/albums" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                aria-haspopup="true" aria-expanded="false">Albums <span class="caret"><span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/Albums">All Albums</a></li>
-                                <li role="separator" class="divider"></li>
-
-
-                            </ul>
-                        </li>
-                        <li><a href="/feedback">Feedback</a></li>
-                        <li><a href="/chat">Chat</a></li>
-                    </ul><!-- nav -->
-                </div><!-- navbar-collapse -->
-            </div><!-- container -->
-        </nav>
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="/index">Home</a></li>
+                    <li><a href="/albums">Album Name</a></li>
+                    <li><a href="/feedback">Feedback</a></li>
+					
+					
+				</ul>
+			</nav>
     </header>
     <div class="container">
         <div class="row">
@@ -92,6 +75,11 @@
         crossorigin="anonymous"></script>
 
     <script src="/js/feedback.js"></script>
+    <script src="js\jquery.min.js"></script>
+	<script src="js\browser.min.js"></script>
+	<script src="js\breakpoints.min.js"></script>
+	<script src="js\util.js"></script>
+	<script src="js\main.js"></script>
 </body>
 
 </html>
